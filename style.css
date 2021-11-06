@@ -1,0 +1,40 @@
+html,body{
+    height: 100%;
+}
+body{
+    display: grid;
+    grid: auto min-content/ repeat(12,1fr) ;
+  gap: 1em;
+}
+header,footer{
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+main{
+    grid-column-start: 4;
+    grid-column-end: 13;
+}
+#spann{
+    grid-column-start:span 3; 
+}
+.image{
+    grid-column-start:span 2;
+  
+}
+aside , nav{
+
+ grid-column-start: 1;
+    grid-column-end: 4;
+}
+nav>ul{
+    list-style: none;
+    
+}
+nav>ul>li{
+    display: inline-block;
+    margin-left: 50px;
+}
+a{
+    text-decoration: none;
+    color: blueviolet;
+}
